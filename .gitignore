@@ -22,20 +22,17 @@ data/
 *.npz
 
 # Generated results
-results/
 results_mega/
 results_autonomous/
 results_overnight/
 
 # Generated figures
-figures/
 *.png
 *.jpg
 *.jpeg
 *.gif
 
 # Generated tabular outputs
-*.csv
 
 # Logs
 *.log

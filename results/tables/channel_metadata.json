@@ -1,0 +1,86 @@
+{
+  "WFS_PIT": {
+    "channel": "H1:IMC-WFS_A_DC_PIT_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "WFS_YAW": {
+    "channel": "H1:IMC-WFS_A_DC_YAW_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "LSC_POP": {
+    "channel": "H1:LSC-POP_A_LF_OUT_DQ",
+    "sample_rate": 2048.0,
+    "samples": 131072,
+    "duration": 64.0
+  },
+  "LSC_REFL": {
+    "channel": "H1:LSC-REFL_A_RIN_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "OAF_PIT": {
+    "channel": "H1:OAF-IMC_WFS_A_DC_PIT_PREFILT_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "OAF_YAW": {
+    "channel": "H1:OAF-IMC_WFS_A_DC_YAW_PREFILT_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "OAF_REFL": {
+    "channel": "H1:OAF-REFL_A_RIN_PREFILT_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "PEM_MAINS": {
+    "channel": "H1:PEM-EY_MAINSMON_EBAY_1_DQ",
+    "sample_rate": 8192.0,
+    "samples": 524288,
+    "duration": 64.0
+  },
+  "ETMX_L1": {
+    "channel": "H1:SUS-ETMX_L1_CAL_LINE_OUT_DQ",
+    "sample_rate": 512.0,
+    "samples": 32768,
+    "duration": 64.0
+  },
+  "ETMX_L2": {
+    "channel": "H1:SUS-ETMX_L2_CAL_LINE_OUT_DQ",
+    "sample_rate": 512.0,
+    "samples": 32768,
+    "duration": 64.0
+  },
+  "ETMX_L3": {
+    "channel": "H1:SUS-ETMX_L3_CAL_LINE_OUT_DQ",
+    "sample_rate": 512.0,
+    "samples": 32768,
+    "duration": 64.0
+  },
+  "PI_MON": {
+    "channel": "H1:SUS-PI_PROC_COMPUTE_MODE29_RMSMON",
+    "sample_rate": 16.0,
+    "samples": 1024,
+    "duration": 64.0
+  },
+  "PCALX": {
+    "channel": "H1:CAL-PCALX_RX_PD_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  },
+  "PCALY": {
+    "channel": "H1:CAL-PCALY_RX_PD_OUT_DQ",
+    "sample_rate": 16384.0,
+    "samples": 1048576,
+    "duration": 64.0
+  }
+}
