@@ -7,19 +7,38 @@ __pycache__/
 .venv/
 venv/
 env/
+ligo-venv/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Large scientific data
-data/*
-!data/.gitkeep
+# Raw / large scientific data
+data/
+*.gwf
+*.hdf5
+*.h5
+*.hdf
+*.npy
+*.npz
 
 # Generated results
 results/
+results_mega/
+results_autonomous/
+results_overnight/
 
 # Generated figures
 figures/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Generated tabular outputs
+*.csv
+
+# Logs
+*.log
 
 # IDE
 .vscode/
@@ -28,3 +47,7 @@ figures/
 # OS
 .DS_Store
 Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
