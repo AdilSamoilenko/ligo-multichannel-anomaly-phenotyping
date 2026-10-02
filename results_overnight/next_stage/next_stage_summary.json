@@ -1,0 +1,18 @@
+{
+  "input": "/home/adil/ligo-anomaly/results_overnight/independent_replication/replication_windows.csv",
+  "candidate_windows": 15,
+  "candidate_episodes": 6,
+  "control_windows": 20,
+  "episode_results": 6,
+  "control_results": 20,
+  "strain_results": 6,
+  "configuration": {
+    "wfs_channel": "H1:IMC-WFS_A_DC_YAW_OUT_DQ",
+    "lsc_channel": "H1:LSC-POP_A_LF_OUT_DQ",
+    "frozen_lag": 0.208984,
+    "lag_tolerance": 0.0625,
+    "primary_threshold": 0.7,
+    "surrogates": 2000,
+    "seed": 20261003
+  }
+}

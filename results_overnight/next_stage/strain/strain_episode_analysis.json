@@ -1,0 +1,50 @@
+[
+  {
+    "episode_id": "E0001",
+    "auxiliary_file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1370345562.0,
+    "end": 1370345569.0,
+    "strain_rms": NaN
+  },
+  {
+    "episode_id": "E0002",
+    "auxiliary_file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1370345572.0,
+    "end": 1370345579.0,
+    "strain_rms": NaN
+  },
+  {
+    "episode_id": "E0003",
+    "auxiliary_file": "W0_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1369599120.0,
+    "end": 1369599129.0,
+    "strain_rms": NaN
+  },
+  {
+    "episode_id": "E0004",
+    "auxiliary_file": "W10_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1376516129.0,
+    "end": 1376516136.0,
+    "strain_rms": NaN
+  },
+  {
+    "episode_id": "E0005",
+    "auxiliary_file": "W10_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1376516139.0,
+    "end": 1376516151.0,
+    "strain_rms": NaN
+  },
+  {
+    "episode_id": "E0006",
+    "auxiliary_file": "W7_H1_AUX_AR1.gwf",
+    "strain_file": null,
+    "start": 1374550483.0,
+    "end": 1374550494.0,
+    "strain_rms": NaN
+  }
+]

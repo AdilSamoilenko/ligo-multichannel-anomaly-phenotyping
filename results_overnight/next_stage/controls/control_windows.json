@@ -1,0 +1,142 @@
+[
+  {
+    "control_id": "CONTROL_W1_H1_AUX_AR1.gwf_C01",
+    "file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "start": 1370345538.0,
+    "end": 1370345545.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "CONTROL_W1_H1_AUX_AR1.gwf_C02",
+    "file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "start": 1370345592.0,
+    "end": 1370345599.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "CONTROL_W1_H1_AUX_AR1.gwf_C03",
+    "file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "start": 1370345586.0,
+    "end": 1370345593.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "CONTROL_W1_H1_AUX_AR1.gwf_C04",
+    "file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "start": 1370345543.0,
+    "end": 1370345550.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "CONTROL_W1_H1_AUX_AR1.gwf_C05",
+    "file": "CONTROL_W1_H1_AUX_AR1.gwf",
+    "start": 1370345539.0,
+    "end": 1370345546.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W0_H1_AUX_AR1.gwf_C01",
+    "file": "W0_H1_AUX_AR1.gwf",
+    "start": 1369599142.0,
+    "end": 1369599149.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W0_H1_AUX_AR1.gwf_C02",
+    "file": "W0_H1_AUX_AR1.gwf",
+    "start": 1369599137.0,
+    "end": 1369599144.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W0_H1_AUX_AR1.gwf_C03",
+    "file": "W0_H1_AUX_AR1.gwf",
+    "start": 1369599104.0,
+    "end": 1369599111.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W0_H1_AUX_AR1.gwf_C04",
+    "file": "W0_H1_AUX_AR1.gwf",
+    "start": 1369599145.0,
+    "end": 1369599152.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W0_H1_AUX_AR1.gwf_C05",
+    "file": "W0_H1_AUX_AR1.gwf",
+    "start": 1369599152.0,
+    "end": 1369599159.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W10_H1_AUX_AR1.gwf_C01",
+    "file": "W10_H1_AUX_AR1.gwf",
+    "start": 1376516114.0,
+    "end": 1376516121.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W10_H1_AUX_AR1.gwf_C02",
+    "file": "W10_H1_AUX_AR1.gwf",
+    "start": 1376516104.0,
+    "end": 1376516111.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W10_H1_AUX_AR1.gwf_C03",
+    "file": "W10_H1_AUX_AR1.gwf",
+    "start": 1376516105.0,
+    "end": 1376516112.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W10_H1_AUX_AR1.gwf_C04",
+    "file": "W10_H1_AUX_AR1.gwf",
+    "start": 1376516112.0,
+    "end": 1376516119.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W10_H1_AUX_AR1.gwf_C05",
+    "file": "W10_H1_AUX_AR1.gwf",
+    "start": 1376516113.0,
+    "end": 1376516120.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W7_H1_AUX_AR1.gwf_C01",
+    "file": "W7_H1_AUX_AR1.gwf",
+    "start": 1374550509.0,
+    "end": 1374550516.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W7_H1_AUX_AR1.gwf_C02",
+    "file": "W7_H1_AUX_AR1.gwf",
+    "start": 1374550516.0,
+    "end": 1374550523.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W7_H1_AUX_AR1.gwf_C03",
+    "file": "W7_H1_AUX_AR1.gwf",
+    "start": 1374550466.0,
+    "end": 1374550473.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W7_H1_AUX_AR1.gwf_C04",
+    "file": "W7_H1_AUX_AR1.gwf",
+    "start": 1374550512.0,
+    "end": 1374550519.0,
+    "duration": 7.0
+  },
+  {
+    "control_id": "W7_H1_AUX_AR1.gwf_C05",
+    "file": "W7_H1_AUX_AR1.gwf",
+    "start": 1374550502.0,
+    "end": 1374550509.0,
+    "duration": 7.0
+  }
+]

@@ -1,0 +1,714 @@
+LIGO MULTICHANNEL ANOMALY PHENOTYPING
+Next-stage validation report
+
+Discovery definition
+-------------------
+WFS channel: H1:IMC-WFS_A_DC_YAW_OUT_DQ
+LSC channel: H1:LSC-POP_A_LF_OUT_DQ
+Discovery file: W10_H1_AUX_AR1.gwf
+Discovery interval: 1376516121.000 - 1376516128.000
+Frozen lag: 0.208984 s
+Lag tolerance: 0.062500 s
+Primary threshold: r >= 0.70
+
+Window to episode conversion
+---------------------------
+Primary-pass windows: 15
+Candidate episodes: 6
+
+episode_id                      file        start          end  duration  window_count  maximum_r_frozen  median_r_frozen  maximum_r_max  median_lag  lag_std  minimum_empirical_p
+     E0001 CONTROL_W1_H1_AUX_AR1.gwf 1370345562.0 1370345569.0       7.0             1          0.710466         0.710466       0.710466    0.160156 0.000000             0.039841
+     E0002 CONTROL_W1_H1_AUX_AR1.gwf 1370345572.0 1370345579.0       7.0             1          0.856214         0.856214       0.856214    0.253906 0.000000             0.015936
+     E0003         W0_H1_AUX_AR1.gwf 1369599120.0 1369599129.0       9.0             3          0.844086         0.815221       0.870800    0.146484 0.000000             0.023904
+     E0004        W10_H1_AUX_AR1.gwf 1376516129.0 1376516136.0       7.0             1          0.738482         0.738482       0.815828    0.271484 0.000000             0.011952
+     E0005        W10_H1_AUX_AR1.gwf 1376516139.0 1376516151.0      12.0             5          0.903255         0.848512       0.914098    0.271484 0.054171             0.003984
+     E0006         W7_H1_AUX_AR1.gwf 1374550483.0 1374550494.0      11.0             4          0.836462         0.774560       0.868514    0.271484 0.062500             0.003984
+
+Episode analysis
+----------------
+episode_id                      file        start          end  duration  r_frozen  r_lag_local  lag_local   null_p  maximum_coherence  coherence_frequency  wfs_bp_0_2   wfs_bp_2_5  wfs_bp_5_10  wfs_bp_10_20  wfs_bp_20_50  wfs_bp_50_100  wfs_bp_100_300  wfs_bp_300_1000  lsc_bp_0_2  lsc_bp_2_5  lsc_bp_5_10  lsc_bp_10_20  lsc_bp_20_50  lsc_bp_50_100  lsc_bp_100_300  lsc_bp_300_1000    fdr_p  fdr_significant
+     E0001 CONTROL_W1_H1_AUX_AR1.gwf 1370345562.0 1370345569.0       7.0  0.453252     0.453440   0.224609 0.000500           0.996803               205.75    0.001388 4.844046e-07 1.792877e-09  2.345347e-09  3.862954e-09   1.226299e-08    1.216747e-07     7.075423e-09  314.431628    1.606265     0.000064      0.000005      0.000003       0.000003        0.000010         0.000009 0.000600             True
+     E0002 CONTROL_W1_H1_AUX_AR1.gwf 1370345572.0 1370345579.0       7.0  0.585697     0.587459   0.248047 0.000500           0.999444                32.75    0.000467 3.266510e-07 1.624074e-09  2.159063e-09  4.021828e-09   1.344663e-08    1.356546e-07     6.356042e-09  420.851312    4.022270     0.000057      0.000006      0.000005       0.000004        0.000011         0.000009 0.000600             True
+     E0003         W0_H1_AUX_AR1.gwf 1369599120.0 1369599129.0       9.0  0.732844     0.735977   0.148437 0.000500           0.986082               164.75    0.000399 5.955086e-07 1.718261e-09  2.556454e-09  3.682658e-09   1.371165e-08    1.652535e-07     6.318243e-09 1573.941044    0.181265     0.000044      0.000004      0.000005       0.000003        0.000013         0.000008 0.000600             True
+     E0004        W10_H1_AUX_AR1.gwf 1376516129.0 1376516136.0       7.0 -0.046602    -0.065784   0.146484 0.294353           0.999918               106.75    0.001540 2.559328e-06 2.947737e-09  1.735818e-09  3.125690e-09   1.363374e-08    1.377666e-07     3.183526e-09  307.971093    0.112874     0.000015      0.000002      0.000003       0.000002        0.000008         0.000005 0.294353            False
+     E0005        W10_H1_AUX_AR1.gwf 1376516139.0 1376516151.0      12.0  0.281698     0.287580   0.271484 0.000500           0.937815                80.25    0.000519 3.440460e-07 1.880051e-09  1.993476e-09  3.402515e-09   1.162507e-08    1.694742e-07     3.218393e-09  228.856331    0.178514     0.000018      0.000002      0.000002       0.000002        0.000007         0.000005 0.000600             True
+     E0006         W7_H1_AUX_AR1.gwf 1374550483.0 1374550494.0      11.0  0.259487     0.259806   0.264648 0.000500           0.907257                61.00    0.000643 1.577896e-06 4.754362e-09  2.335070e-09  3.770204e-09   1.154837e-08    1.068735e-07     3.897320e-09   47.678216    0.066039     0.000015      0.000004      0.000003       0.000003        0.000007         0.000005 0.000600             True
+
+Control analysis
+----------------
+Control windows selected: 20
+
+                   control_id                      file        start          end  duration  r_frozen  r_lag_local  lag_local  maximum_coherence  coherence_frequency  wfs_bp_0_2   wfs_bp_2_5  wfs_bp_5_10  wfs_bp_10_20  wfs_bp_20_50  wfs_bp_50_100  wfs_bp_100_300  wfs_bp_300_1000  lsc_bp_0_2  lsc_bp_2_5  lsc_bp_5_10  lsc_bp_10_20  lsc_bp_20_50  lsc_bp_50_100  lsc_bp_100_300  lsc_bp_300_1000
+CONTROL_W1_H1_AUX_AR1.gwf_C01 CONTROL_W1_H1_AUX_AR1.gwf 1370345538.0 1370345545.0       7.0 -0.289040    -0.290050   0.162109           0.998141               143.75    0.000329 6.156125e-07 1.446577e-09  2.264573e-09  4.013373e-09   1.311096e-08    1.306652e-07     6.903878e-09  430.571988    4.492999     0.000058      0.000003      0.000003       0.000004        0.000010         0.000008
+CONTROL_W1_H1_AUX_AR1.gwf_C02 CONTROL_W1_H1_AUX_AR1.gwf 1370345592.0 1370345599.0       7.0 -0.404395    -0.412481   0.271484           0.999862                 5.75    0.000121 4.963004e-07 2.141456e-09  2.653479e-09  3.597785e-09   1.101284e-08    1.320042e-07     6.932244e-09  382.067636    2.306177     0.000109      0.000003      0.000004       0.000004        0.000010         0.000008
+CONTROL_W1_H1_AUX_AR1.gwf_C03 CONTROL_W1_H1_AUX_AR1.gwf 1370345586.0 1370345593.0       7.0 -0.313350    -0.320850   0.271484           0.999019               402.75    0.000353 1.022125e-06 1.562655e-09  2.134964e-09  3.104125e-09   1.312310e-08    1.241089e-07     6.135494e-09  116.744023    1.274267     0.000169      0.000004      0.000004       0.000004        0.000010         0.000008
+CONTROL_W1_H1_AUX_AR1.gwf_C04 CONTROL_W1_H1_AUX_AR1.gwf 1370345543.0 1370345550.0       7.0 -0.478819    -0.488302   0.146484           0.999771               476.00    0.000189 3.022310e-07 2.699209e-09  2.200406e-09  3.983628e-09   1.376316e-08    1.375298e-07     6.526026e-09  850.442795    1.445644     0.000127      0.000003      0.000004       0.000004        0.000010         0.000009
+CONTROL_W1_H1_AUX_AR1.gwf_C05 CONTROL_W1_H1_AUX_AR1.gwf 1370345539.0 1370345546.0       7.0 -0.344255    -0.353053   0.148437           0.999622               198.50    0.000390 6.360293e-07 1.773969e-09  2.141781e-09  3.649515e-09   1.255884e-08    1.463870e-07     6.705917e-09  597.590580    4.973056     0.000069      0.000004      0.000003       0.000004        0.000010         0.000009
+        W0_H1_AUX_AR1.gwf_C01         W0_H1_AUX_AR1.gwf 1369599142.0 1369599149.0       7.0 -0.245629    -0.264281   0.146484           0.999841                59.00    0.000241 5.357510e-07 2.181847e-09  2.599535e-09  3.713948e-09   1.370163e-08    1.633320e-07     6.394439e-09  192.199458    0.232735     0.000017      0.000005      0.000004       0.000004        0.000013         0.000008
+        W0_H1_AUX_AR1.gwf_C02         W0_H1_AUX_AR1.gwf 1369599137.0 1369599144.0       7.0  0.264004     0.303430   0.271484           0.999976               365.50    0.000218 4.058486e-07 6.404384e-09  2.767523e-09  3.830164e-09   1.687828e-08    1.482767e-07     6.078962e-09  881.767259    0.296246     0.000027      0.000005      0.000005       0.000004        0.000010         0.000008
+        W0_H1_AUX_AR1.gwf_C03         W0_H1_AUX_AR1.gwf 1369599104.0 1369599111.0       7.0 -0.495245    -0.497329   0.146484           0.999811               446.25    0.000303 6.721190e-07 2.041547e-09  2.015658e-09  3.914822e-09   1.510998e-08    1.767523e-07     7.114549e-09   97.475661    0.215202     0.000047      0.000004      0.000004       0.000003        0.000010         0.000008
+        W0_H1_AUX_AR1.gwf_C04         W0_H1_AUX_AR1.gwf 1369599145.0 1369599152.0       7.0 -0.331350    -0.349599   0.146484           0.999155               195.75    0.000174 8.262838e-07 2.031642e-09  1.940164e-09  4.140060e-09   1.416917e-08    1.569896e-07     6.786702e-09   96.418027    0.275935     0.000030      0.000005      0.000004       0.000004        0.000013         0.000008
+        W0_H1_AUX_AR1.gwf_C05         W0_H1_AUX_AR1.gwf 1369599152.0 1369599159.0       7.0 -0.401101    -0.430495   0.271484           0.999739               146.00    0.000593 3.332917e-07 1.386942e-09  2.325027e-09  3.374412e-09   1.454844e-08    1.397779e-07     6.156114e-09  436.474803    0.215031     0.000027      0.000004      0.000004       0.000004        0.000013         0.000008
+       W10_H1_AUX_AR1.gwf_C01        W10_H1_AUX_AR1.gwf 1376516114.0 1376516121.0       7.0  0.025654     0.028126   0.146484           0.998988               143.25    0.000137 4.947687e-07 2.106149e-09  2.259390e-09  3.198312e-09   1.280058e-08    1.430056e-07     3.256428e-09   63.125578    0.151149     0.000009      0.000002      0.000002       0.000002        0.000007         0.000006
+       W10_H1_AUX_AR1.gwf_C02        W10_H1_AUX_AR1.gwf 1376516104.0 1376516111.0       7.0 -0.004272    -0.011397   0.271484           0.999658               380.00    0.002211 1.009328e-06 2.250569e-09  2.392253e-09  2.854900e-09   1.494725e-08    1.186844e-07     3.314090e-09   71.979576    0.116924     0.000019      0.000002      0.000003       0.000002        0.000006         0.000006
+       W10_H1_AUX_AR1.gwf_C03        W10_H1_AUX_AR1.gwf 1376516105.0 1376516112.0       7.0  0.023302     0.033408   0.146484           0.999723               405.50    0.001889 1.300537e-06 2.611796e-09  2.624609e-09  3.240833e-09   1.232396e-08    1.301035e-07     3.179199e-09   33.978229    0.099391     0.000014      0.000002      0.000003       0.000002        0.000006         0.000005
+       W10_H1_AUX_AR1.gwf_C04        W10_H1_AUX_AR1.gwf 1376516112.0 1376516119.0       7.0  0.004267     0.018750   0.269531           0.999936               315.00    0.000124 5.613694e-07 2.254338e-09  1.725763e-09  3.197867e-09   1.420312e-08    1.598203e-07     3.571986e-09  156.642913    0.102168     0.000023      0.000002      0.000002       0.000002        0.000007         0.000006
+       W10_H1_AUX_AR1.gwf_C05        W10_H1_AUX_AR1.gwf 1376516113.0 1376516120.0       7.0 -0.064326    -0.068630   0.146484           0.999595                82.00    0.000140 6.759072e-07 2.400778e-09  2.375650e-09  3.405257e-09   1.549306e-08    1.654874e-07     3.370983e-09   81.555433    0.100928     0.000022      0.000002      0.000003       0.000002        0.000007         0.000006
+        W7_H1_AUX_AR1.gwf_C01         W7_H1_AUX_AR1.gwf 1374550509.0 1374550516.0       7.0  0.066760     0.069928   0.147461           0.999857               106.25    0.000648 6.475764e-07 1.698670e-09  3.408765e-09  4.699447e-09   1.322519e-08    1.080655e-07     3.737422e-09   65.722692    0.159448     0.000037      0.000002      0.000004       0.000002        0.000007         0.000005
+        W7_H1_AUX_AR1.gwf_C02         W7_H1_AUX_AR1.gwf 1374550516.0 1374550523.0       7.0 -0.106597    -0.120083   0.271484           0.999962               420.00    0.000961 1.853233e-06 1.723100e-08  2.199062e-09  4.502208e-09   1.104997e-08    9.441770e-08     3.215647e-09   93.817545    0.108619     0.000018      0.000002      0.000004       0.000002        0.000007         0.000005
+        W7_H1_AUX_AR1.gwf_C03         W7_H1_AUX_AR1.gwf 1374550466.0 1374550473.0       7.0  0.120414     0.121144   0.258789           0.999950               320.25    0.000025 2.903529e-07 2.456851e-09  2.428147e-09  4.471225e-09   1.314291e-08    1.054487e-07     3.587560e-09   11.937007    0.070339     0.000007      0.000005      0.000004       0.000003        0.000007         0.000005
+        W7_H1_AUX_AR1.gwf_C04         W7_H1_AUX_AR1.gwf 1374550512.0 1374550519.0       7.0 -0.000460    -0.005998   0.271484           0.999505                42.75    0.000867 4.523127e-07 2.068503e-09  2.063879e-09  4.203658e-09   1.305491e-08    9.507786e-08     3.866365e-09  109.262054    0.195307     0.000038      0.000002      0.000003       0.000003        0.000007         0.000005
+        W7_H1_AUX_AR1.gwf_C05         W7_H1_AUX_AR1.gwf 1374550502.0 1374550509.0       7.0  0.045371     0.063333   0.271484           0.999513               291.75    0.000355 4.107686e-07 1.427377e-09  2.244474e-09  3.862449e-09   1.209559e-08    7.217607e-08     3.729303e-09  127.884783    0.074246     0.000040      0.000003      0.000003       0.000002        0.000006         0.000005
+
+Episode-control comparison
+--------------------------
+{
+  "episode_count": 6,
+  "control_count": 20,
+  "tests": {
+    "r_frozen": {
+      "episode_median": 0.36747512362588886,
+      "control_median": -0.0854612758968248,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 110.0,
+      "p_value": 0.0010858706510880425
+    },
+    "r_lag_local": {
+      "episode_median": 0.3705097656820394,
+      "control_median": -0.0943563599781346,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 109.0,
+      "p_value": 0.0014680971202710334
+    },
+    "lag_local": {
+      "episode_median": 0.23632775,
+      "control_median": 0.21044884375,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 59.0,
+      "p_value": 0.9748270217965749
+    },
+    "maximum_coherence": {
+      "episode_median": 0.991442112319352,
+      "control_median": 0.9997308655045094,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 20.0,
+      "p_value": 0.013143378360769665
+    }
+  }
+}
+
+Strain analysis
+---------------
+episode_id            auxiliary_file strain_file        start          end  strain_rms
+     E0001 CONTROL_W1_H1_AUX_AR1.gwf        None 1370345562.0 1370345569.0         NaN
+     E0002 CONTROL_W1_H1_AUX_AR1.gwf        None 1370345572.0 1370345579.0         NaN
+     E0003         W0_H1_AUX_AR1.gwf        None 1369599120.0 1369599129.0         NaN
+     E0004        W10_H1_AUX_AR1.gwf        None 1376516129.0 1376516136.0         NaN
+     E0005        W10_H1_AUX_AR1.gwf        None 1376516139.0 1376516151.0         NaN
+     E0006         W7_H1_AUX_AR1.gwf        None 1374550483.0 1374550494.0         NaN
+
+Provenance search
+-----------------
+
+IMC-WFS_A_DC_YAW_OUT_DQ
+  analyse_episode_tf.py
+  control_episode_test.py
+  cross_channel_episode.py
+  cross_channel_scan.py
+  direct_oaf_test.py
+  episode_control_spectral.py
+  episode_correlations.py
+  episode_multichannel.py
+  inspect_channel_metadata.py
+  inspect_channels.py
+  lag_correlation_scan.py
+  next_stage_pipeline.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/lag_correlations.csv
+  results/tables/channel_metadata.json
+  results/wide_lag_correlations.csv
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/independent_replication/INDEPENDENT_REPLICATION_REPORT.txt
+  results_overnight/independent_replication/replication_windows.csv
+  results_overnight/independent_replication/replication_windows.json
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/next_stage_summary.json
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/tables/metadata.json
+  src/candidate_aux_manifest.py
+  surrogate_correlations.py
+  test_oaf_dependency.py
+  wide_lag_scan.py
+
+LSC-POP_A_LF_OUT_DQ
+  candidate_significance.py
+  channel_relationship.py
+  coherence.py
+  control_episode_test.py
+  cross_channel_episode.py
+  cross_channel_scan.py
+  episode_correlations.py
+  episode_multichannel.py
+  lag_correlation_scan.py
+  lag_significance.py
+  matched_significance.py
+  next_stage_pipeline.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/lag_correlations.csv
+  results/tables/channel_metadata.json
+  results/wide_lag_correlations.csv
+  results_overnight/independent_replication/INDEPENDENT_REPLICATION_REPORT.txt
+  results_overnight/independent_replication/replication_windows.csv
+  results_overnight/independent_replication/replication_windows.json
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/next_stage_summary.json
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/tables/metadata.json
+  significance_scan.py
+  surrogate_correlations.py
+  wide_lag_scan.py
+
+WFS_YAW
+  independent_replication.py
+  next_stage_pipeline.py
+  overnight_deep_dive.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/tables/channel_metadata.json
+  results/tables/full_frame_statistics.json
+  results_overnight/FINAL_RESEARCH_REPORT.txt
+  results_overnight/OVERNIGHT_REPORT.txt
+  results_overnight/checkpoints/candidates.json
+  results_overnight/checkpoints/controls.json
+  results_overnight/checkpoints/episode_network.json
+  results_overnight/checkpoints/full_network.json
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/deep_dive/deep_dive_results.json
+  results_overnight/independent_replication/replication_windows.csv
+  results_overnight/independent_replication/replication_windows.json
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/statistics/cross_channel_surrogates.json
+  results_overnight/statistics/episode_vs_controls.json
+  results_overnight/statistics/oaf_dependency.json
+  results_overnight/statistics/surrogates.json
+  results_overnight/tables/full_frame_statistics.json
+  results_overnight/tables/metadata.json
+
+LSC_POP
+  independent_replication.py
+  next_stage_pipeline.py
+  overnight_deep_dive.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/tables/channel_metadata.json
+  results/tables/full_frame_statistics.json
+  results_overnight/FINAL_RESEARCH_REPORT.txt
+  results_overnight/OVERNIGHT_REPORT.txt
+  results_overnight/checkpoints/candidates.json
+  results_overnight/checkpoints/controls.json
+  results_overnight/checkpoints/episode_network.json
+  results_overnight/checkpoints/full_network.json
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/deep_dive/deep_dive_results.json
+  results_overnight/independent_replication/replication_windows.csv
+  results_overnight/independent_replication/replication_windows.json
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/statistics/cross_channel_surrogates.json
+  results_overnight/statistics/episode_vs_controls.json
+  results_overnight/statistics/surrogates.json
+  results_overnight/tables/full_frame_statistics.json
+  results_overnight/tables/metadata.json
+
+OAF
+  analyse_episode_tf.py
+  control_episode_test.py
+  cross_channel_episode.py
+  cross_channel_scan.py
+  direct_oaf_test.py
+  episode_control_spectral.py
+  episode_correlations.py
+  episode_multichannel.py
+  inspect_channel_metadata.py
+  inspect_channels.py
+  lag_correlation_scan.py
+  next_stage_pipeline.py
+  overnight_deep_dive.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/lag_correlations.csv
+  results/tables/channel_metadata.json
+  results/tables/full_frame_statistics.json
+  results/wide_lag_correlations.csv
+  results_overnight/FINAL_RESEARCH_REPORT.txt
+  results_overnight/OVERNIGHT_REPORT.txt
+  results_overnight/checkpoints/candidates.json
+  results_overnight/checkpoints/controls.json
+  results_overnight/checkpoints/episode_network.json
+  results_overnight/checkpoints/full_network.json
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/deep_dive/deep_dive_results.json
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/statistics/cross_channel_surrogates.json
+  results_overnight/statistics/episode_vs_controls.json
+  results_overnight/statistics/oaf_dependency.json
+  results_overnight/statistics/surrogates.json
+  results_overnight/tables/full_frame_statistics.json
+  results_overnight/tables/metadata.json
+  spectral_episode_test.py
+  surrogate_correlations.py
+  test_oaf_dependency.py
+  wide_lag_scan.py
+
+GPS
+  analyse_episode_tf.py
+  analyse_gwf.py
+  anomaly_scan.py
+  candidate_asd.py
+  candidate_asd_numeric.py
+  candidate_significance.py
+  candidate_spectral_test.py
+  candidate_spectrograms.py
+  cross_channel_scan.py
+  data/H1_O4a_extracted_metadata.csv
+  episode_correlations.py
+  episode_morphology.py
+  episode_multichannel.py
+  event_morphology.py
+  full_anomaly_features.py
+  inspect_candidates.py
+  inspect_channel_metadata.py
+  lag_correlation_scan.py
+  lag_significance.py
+  matched_significance.py
+  next_stage_pipeline.py
+  overnight_deep_dive.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/anomaly_windows.csv
+  results/correlation_null_distribution.csv
+  results/tables/candidate_windows.json
+  results_overnight/checkpoints/candidates.json
+  results_overnight/checkpoints/scan_ETMX_L1.json
+  results_overnight/checkpoints/scan_ETMX_L2.json
+  results_overnight/checkpoints/scan_ETMX_L3.json
+  results_overnight/checkpoints/scan_LSC_POP.json
+  results_overnight/checkpoints/scan_LSC_REFL.json
+  results_overnight/checkpoints/scan_OAF_PIT.json
+  results_overnight/checkpoints/scan_OAF_REFL.json
+  results_overnight/checkpoints/scan_OAF_YAW.json
+  results_overnight/checkpoints/scan_PCALX.json
+  results_overnight/checkpoints/scan_PCALY.json
+  results_overnight/checkpoints/scan_PEM_MAINS.json
+  results_overnight/checkpoints/scan_PI_MON.json
+  results_overnight/checkpoints/scan_WFS_PIT.json
+  results_overnight/checkpoints/scan_WFS_YAW.json
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/figures/candidates/ETMX_L1_0.0625s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_0.125s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_0.25s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_0.5s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_1.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_2.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_4.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L1_7.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_0.0625s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_0.125s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_0.25s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_0.5s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_1.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_2.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_4.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L2_7.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_0.0625s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_0.125s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_0.25s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_0.5s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_1.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_2.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_4.0s_top20.csv
+  results_overnight/figures/candidates/ETMX_L3_7.0s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_0.0625s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_0.125s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_0.25s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_0.5s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_1.0s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_2.0s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_4.0s_top20.csv
+  results_overnight/figures/candidates/LSC_POP_7.0s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_0.0625s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_0.125s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_0.25s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_0.5s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_1.0s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_2.0s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_4.0s_top20.csv
+  results_overnight/figures/candidates/LSC_REFL_7.0s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_0.0625s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_0.125s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_0.25s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_0.5s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_1.0s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_2.0s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_4.0s_top20.csv
+  results_overnight/figures/candidates/OAF_PIT_7.0s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_0.0625s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_0.125s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_0.25s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_0.5s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_1.0s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_2.0s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_4.0s_top20.csv
+  results_overnight/figures/candidates/OAF_REFL_7.0s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_0.0625s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_0.125s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_0.25s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_0.5s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_1.0s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_2.0s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_4.0s_top20.csv
+  results_overnight/figures/candidates/OAF_YAW_7.0s_top20.csv
+  results_overnight/figures/candidates/PCALX_0.0625s_top20.csv
+  results_overnight/figures/candidates/PCALX_0.125s_top20.csv
+  results_overnight/figures/candidates/PCALX_0.25s_top20.csv
+  results_overnight/figures/candidates/PCALX_0.5s_top20.csv
+  results_overnight/figures/candidates/PCALX_1.0s_top20.csv
+  results_overnight/figures/candidates/PCALX_2.0s_top20.csv
+  results_overnight/figures/candidates/PCALX_4.0s_top20.csv
+  results_overnight/figures/candidates/PCALX_7.0s_top20.csv
+  results_overnight/figures/candidates/PCALY_0.0625s_top20.csv
+  results_overnight/figures/candidates/PCALY_0.125s_top20.csv
+  results_overnight/figures/candidates/PCALY_0.25s_top20.csv
+  results_overnight/figures/candidates/PCALY_0.5s_top20.csv
+  results_overnight/figures/candidates/PCALY_1.0s_top20.csv
+  results_overnight/figures/candidates/PCALY_2.0s_top20.csv
+  results_overnight/figures/candidates/PCALY_4.0s_top20.csv
+  results_overnight/figures/candidates/PCALY_7.0s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_0.0625s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_0.125s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_0.25s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_0.5s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_1.0s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_2.0s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_4.0s_top20.csv
+  results_overnight/figures/candidates/PEM_MAINS_7.0s_top20.csv
+  results_overnight/figures/candidates/PI_MON_0.0625s_top20.csv
+  results_overnight/figures/candidates/PI_MON_0.125s_top20.csv
+  results_overnight/figures/candidates/PI_MON_0.25s_top20.csv
+  results_overnight/figures/candidates/PI_MON_0.5s_top20.csv
+  results_overnight/figures/candidates/PI_MON_1.0s_top20.csv
+  results_overnight/figures/candidates/PI_MON_2.0s_top20.csv
+  results_overnight/figures/candidates/PI_MON_4.0s_top20.csv
+  results_overnight/figures/candidates/PI_MON_7.0s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_0.0625s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_0.125s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_0.25s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_0.5s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_1.0s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_2.0s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_4.0s_top20.csv
+  results_overnight/figures/candidates/WFS_PIT_7.0s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_0.0625s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_0.125s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_0.25s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_0.5s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_1.0s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_2.0s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_4.0s_top20.csv
+  results_overnight/figures/candidates/WFS_YAW_7.0s_top20.csv
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/tables/ETMX_L1_0.0625s.csv
+  results_overnight/tables/ETMX_L1_0.125s.csv
+  results_overnight/tables/ETMX_L1_0.25s.csv
+  results_overnight/tables/ETMX_L1_0.5s.csv
+  results_overnight/tables/ETMX_L1_1.0s.csv
+  results_overnight/tables/ETMX_L1_2.0s.csv
+  results_overnight/tables/ETMX_L1_4.0s.csv
+  results_overnight/tables/ETMX_L1_7.0s.csv
+  results_overnight/tables/ETMX_L2_0.0625s.csv
+  results_overnight/tables/ETMX_L2_0.125s.csv
+  results_overnight/tables/ETMX_L2_0.25s.csv
+  results_overnight/tables/ETMX_L2_0.5s.csv
+  results_overnight/tables/ETMX_L2_1.0s.csv
+  results_overnight/tables/ETMX_L2_2.0s.csv
+  results_overnight/tables/ETMX_L2_4.0s.csv
+  results_overnight/tables/ETMX_L2_7.0s.csv
+  results_overnight/tables/ETMX_L3_0.0625s.csv
+  results_overnight/tables/ETMX_L3_0.125s.csv
+  results_overnight/tables/ETMX_L3_0.25s.csv
+  results_overnight/tables/ETMX_L3_0.5s.csv
+  results_overnight/tables/ETMX_L3_1.0s.csv
+  results_overnight/tables/ETMX_L3_2.0s.csv
+  results_overnight/tables/ETMX_L3_4.0s.csv
+  results_overnight/tables/ETMX_L3_7.0s.csv
+  results_overnight/tables/LSC_POP_0.0625s.csv
+  results_overnight/tables/LSC_POP_0.125s.csv
+  results_overnight/tables/LSC_POP_0.25s.csv
+  results_overnight/tables/LSC_POP_0.5s.csv
+  results_overnight/tables/LSC_POP_1.0s.csv
+  results_overnight/tables/LSC_POP_2.0s.csv
+  results_overnight/tables/LSC_POP_4.0s.csv
+  results_overnight/tables/LSC_POP_7.0s.csv
+  results_overnight/tables/LSC_REFL_0.0625s.csv
+  results_overnight/tables/LSC_REFL_0.125s.csv
+  results_overnight/tables/LSC_REFL_0.25s.csv
+  results_overnight/tables/LSC_REFL_0.5s.csv
+  results_overnight/tables/LSC_REFL_1.0s.csv
+  results_overnight/tables/LSC_REFL_2.0s.csv
+  results_overnight/tables/LSC_REFL_4.0s.csv
+  results_overnight/tables/LSC_REFL_7.0s.csv
+  results_overnight/tables/OAF_PIT_0.0625s.csv
+  results_overnight/tables/OAF_PIT_0.125s.csv
+  results_overnight/tables/OAF_PIT_0.25s.csv
+  results_overnight/tables/OAF_PIT_0.5s.csv
+  results_overnight/tables/OAF_PIT_1.0s.csv
+  results_overnight/tables/OAF_PIT_2.0s.csv
+  results_overnight/tables/OAF_PIT_4.0s.csv
+  results_overnight/tables/OAF_PIT_7.0s.csv
+  results_overnight/tables/OAF_REFL_0.0625s.csv
+  results_overnight/tables/OAF_REFL_0.125s.csv
+  results_overnight/tables/OAF_REFL_0.25s.csv
+  results_overnight/tables/OAF_REFL_0.5s.csv
+  results_overnight/tables/OAF_REFL_1.0s.csv
+  results_overnight/tables/OAF_REFL_2.0s.csv
+  results_overnight/tables/OAF_REFL_4.0s.csv
+  results_overnight/tables/OAF_REFL_7.0s.csv
+  results_overnight/tables/OAF_YAW_0.0625s.csv
+  results_overnight/tables/OAF_YAW_0.125s.csv
+  results_overnight/tables/OAF_YAW_0.25s.csv
+  results_overnight/tables/OAF_YAW_0.5s.csv
+  results_overnight/tables/OAF_YAW_1.0s.csv
+  results_overnight/tables/OAF_YAW_2.0s.csv
+  results_overnight/tables/OAF_YAW_4.0s.csv
+  results_overnight/tables/OAF_YAW_7.0s.csv
+  results_overnight/tables/PCALX_0.0625s.csv
+  results_overnight/tables/PCALX_0.125s.csv
+  results_overnight/tables/PCALX_0.25s.csv
+  results_overnight/tables/PCALX_0.5s.csv
+  results_overnight/tables/PCALX_1.0s.csv
+  results_overnight/tables/PCALX_2.0s.csv
+  results_overnight/tables/PCALX_4.0s.csv
+  results_overnight/tables/PCALX_7.0s.csv
+  results_overnight/tables/PCALY_0.0625s.csv
+  results_overnight/tables/PCALY_0.125s.csv
+  results_overnight/tables/PCALY_0.25s.csv
+  results_overnight/tables/PCALY_0.5s.csv
+  results_overnight/tables/PCALY_1.0s.csv
+  results_overnight/tables/PCALY_2.0s.csv
+  results_overnight/tables/PCALY_4.0s.csv
+  results_overnight/tables/PCALY_7.0s.csv
+  results_overnight/tables/PEM_MAINS_0.0625s.csv
+  results_overnight/tables/PEM_MAINS_0.125s.csv
+  results_overnight/tables/PEM_MAINS_0.25s.csv
+  results_overnight/tables/PEM_MAINS_0.5s.csv
+  results_overnight/tables/PEM_MAINS_1.0s.csv
+  results_overnight/tables/PEM_MAINS_2.0s.csv
+  results_overnight/tables/PEM_MAINS_4.0s.csv
+  results_overnight/tables/PEM_MAINS_7.0s.csv
+  results_overnight/tables/PI_MON_0.0625s.csv
+  results_overnight/tables/PI_MON_0.125s.csv
+  results_overnight/tables/PI_MON_0.25s.csv
+  results_overnight/tables/PI_MON_0.5s.csv
+  results_overnight/tables/PI_MON_1.0s.csv
+  results_overnight/tables/PI_MON_2.0s.csv
+  results_overnight/tables/PI_MON_4.0s.csv
+  results_overnight/tables/PI_MON_7.0s.csv
+  results_overnight/tables/WFS_PIT_0.0625s.csv
+  results_overnight/tables/WFS_PIT_0.125s.csv
+  results_overnight/tables/WFS_PIT_0.25s.csv
+  results_overnight/tables/WFS_PIT_0.5s.csv
+  results_overnight/tables/WFS_PIT_1.0s.csv
+  results_overnight/tables/WFS_PIT_2.0s.csv
+  results_overnight/tables/WFS_PIT_4.0s.csv
+  results_overnight/tables/WFS_PIT_7.0s.csv
+  results_overnight/tables/WFS_YAW_0.0625s.csv
+  results_overnight/tables/WFS_YAW_0.125s.csv
+  results_overnight/tables/WFS_YAW_0.25s.csv
+  results_overnight/tables/WFS_YAW_0.5s.csv
+  results_overnight/tables/WFS_YAW_1.0s.csv
+  results_overnight/tables/WFS_YAW_2.0s.csv
+  results_overnight/tables/WFS_YAW_4.0s.csv
+  results_overnight/tables/WFS_YAW_7.0s.csv
+  results_overnight/tables/etmx_l1_0.25s.json
+  results_overnight/tables/etmx_l1_0.50s.json
+  results_overnight/tables/etmx_l1_1.00s.json
+  results_overnight/tables/etmx_l1_2.00s.json
+  results_overnight/tables/etmx_l1_4.00s.json
+  results_overnight/tables/etmx_l1_7.00s.json
+  results_overnight/tables/etmx_l2_0.25s.json
+  results_overnight/tables/etmx_l2_0.50s.json
+  results_overnight/tables/etmx_l2_1.00s.json
+  results_overnight/tables/etmx_l2_2.00s.json
+  results_overnight/tables/etmx_l2_4.00s.json
+  results_overnight/tables/etmx_l2_7.00s.json
+  results_overnight/tables/etmx_l3_0.25s.json
+  results_overnight/tables/etmx_l3_0.50s.json
+  results_overnight/tables/etmx_l3_1.00s.json
+  results_overnight/tables/etmx_l3_2.00s.json
+  results_overnight/tables/etmx_l3_4.00s.json
+  results_overnight/tables/etmx_l3_7.00s.json
+  results_overnight/tables/lsc_pop_0.25s.json
+  results_overnight/tables/lsc_pop_0.50s.json
+  results_overnight/tables/lsc_pop_1.00s.json
+  results_overnight/tables/lsc_pop_2.00s.json
+  results_overnight/tables/lsc_pop_4.00s.json
+  results_overnight/tables/lsc_pop_7.00s.json
+  results_overnight/tables/lsc_refl_0.25s.json
+  results_overnight/tables/lsc_refl_0.50s.json
+  results_overnight/tables/lsc_refl_1.00s.json
+  results_overnight/tables/lsc_refl_2.00s.json
+  results_overnight/tables/lsc_refl_4.00s.json
+  results_overnight/tables/lsc_refl_7.00s.json
+  results_overnight/tables/oaf_pit_0.25s.json
+  results_overnight/tables/oaf_pit_0.50s.json
+  results_overnight/tables/oaf_pit_1.00s.json
+  results_overnight/tables/oaf_pit_2.00s.json
+  results_overnight/tables/oaf_pit_4.00s.json
+  results_overnight/tables/oaf_pit_7.00s.json
+  results_overnight/tables/oaf_refl_0.25s.json
+  results_overnight/tables/oaf_refl_0.50s.json
+  results_overnight/tables/oaf_refl_1.00s.json
+  results_overnight/tables/oaf_refl_2.00s.json
+  results_overnight/tables/oaf_refl_4.00s.json
+  results_overnight/tables/oaf_refl_7.00s.json
+  results_overnight/tables/oaf_yaw_0.25s.json
+  results_overnight/tables/oaf_yaw_0.50s.json
+  results_overnight/tables/oaf_yaw_1.00s.json
+  results_overnight/tables/oaf_yaw_2.00s.json
+  results_overnight/tables/oaf_yaw_4.00s.json
+  results_overnight/tables/oaf_yaw_7.00s.json
+  results_overnight/tables/pcalx_0.25s.json
+  results_overnight/tables/pcalx_0.50s.json
+  results_overnight/tables/pcalx_1.00s.json
+  results_overnight/tables/pcalx_2.00s.json
+  results_overnight/tables/pcalx_4.00s.json
+  results_overnight/tables/pcalx_7.00s.json
+  results_overnight/tables/pcaly_0.25s.json
+  results_overnight/tables/pcaly_0.50s.json
+  results_overnight/tables/pcaly_1.00s.json
+  results_overnight/tables/pcaly_2.00s.json
+  results_overnight/tables/pcaly_4.00s.json
+  results_overnight/tables/pcaly_7.00s.json
+  results_overnight/tables/pem_mains_0.25s.json
+  results_overnight/tables/pem_mains_0.50s.json
+  results_overnight/tables/pem_mains_1.00s.json
+  results_overnight/tables/pem_mains_2.00s.json
+  results_overnight/tables/pem_mains_4.00s.json
+  results_overnight/tables/pem_mains_7.00s.json
+  results_overnight/tables/pi_mon_0.25s.json
+  results_overnight/tables/pi_mon_0.50s.json
+  results_overnight/tables/pi_mon_1.00s.json
+  results_overnight/tables/pi_mon_2.00s.json
+  results_overnight/tables/pi_mon_4.00s.json
+  results_overnight/tables/pi_mon_7.00s.json
+  results_overnight/tables/wfs_pit_0.25s.json
+  results_overnight/tables/wfs_pit_0.50s.json
+  results_overnight/tables/wfs_pit_1.00s.json
+  results_overnight/tables/wfs_pit_2.00s.json
+  results_overnight/tables/wfs_pit_4.00s.json
+  results_overnight/tables/wfs_pit_7.00s.json
+  results_overnight/tables/wfs_yaw_0.25s.json
+  results_overnight/tables/wfs_yaw_0.50s.json
+  results_overnight/tables/wfs_yaw_1.00s.json
+  results_overnight/tables/wfs_yaw_2.00s.json
+  results_overnight/tables/wfs_yaw_4.00s.json
+  results_overnight/tables/wfs_yaw_7.00s.json
+  significance_scan.py
+  src/build_manifest.py
+  src/candidate_aux_manifest.py
+  src/check_candidate_events.py
+  src/data_acquisition.py
+  src/download_strain.py
+  src/extract_windows.py
+  wide_lag_scan.py
+
+derived
+  README.md
+  docs/literature_matrix.md
+  docs/research_gap_analysis.md
+  next_stage_pipeline.py
+  overnight_deep_dive.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+
+prefilt
+  analyse_episode_tf.py
+  control_episode_test.py
+  cross_channel_episode.py
+  cross_channel_scan.py
+  direct_oaf_test.py
+  episode_control_spectral.py
+  episode_correlations.py
+  episode_multichannel.py
+  inspect_channel_metadata.py
+  inspect_channels.py
+  lag_correlation_scan.py
+  next_stage_pipeline.py
+  pipeline/analysis_runner.py
+  pipeline/autonomous_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  pipeline/run_all.py
+  results/lag_correlations.csv
+  results/tables/channel_metadata.json
+  results/wide_lag_correlations.csv
+  results_overnight/deep_dive/DEEP_DIVE_REPORT.txt
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+  results_overnight/statistics/FINAL_RESULTS.json
+  results_overnight/tables/metadata.json
+  spectral_episode_test.py
+  surrogate_correlations.py
+  test_oaf_dependency.py
+  wide_lag_scan.py
+
+filter
+  next_stage_pipeline.py
+  pipeline/research_pipeline.py
+  pipeline/research_runner.py
+  results_overnight/next_stage/NEXT_STAGE_RESEARCH_REPORT.txt
+  results_overnight/next_stage/provenance/channel_provenance_search.json
+
+Interpretation
+--------------
+The episode-level analysis is intended to determine whether the previously identified window-level relationship forms distinct recurring episodes. Overlapping windows are not treated as independent observations.
+
+The control comparison is descriptive and does not by itself establish a causal relationship or a new detector coupling.
+
+A relationship with auxiliary channels does not establish an astrophysical origin. Channel provenance and known detector control pathways must be examined before any novelty claim is made.

@@ -1,0 +1,38 @@
+{
+  "episode_count": 6,
+  "control_count": 20,
+  "tests": {
+    "r_frozen": {
+      "episode_median": 0.36747512362588886,
+      "control_median": -0.0854612758968248,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 110.0,
+      "p_value": 0.0010858706510880425
+    },
+    "r_lag_local": {
+      "episode_median": 0.3705097656820394,
+      "control_median": -0.0943563599781346,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 109.0,
+      "p_value": 0.0014680971202710334
+    },
+    "lag_local": {
+      "episode_median": 0.23632775,
+      "control_median": 0.21044884375,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 59.0,
+      "p_value": 0.9748270217965749
+    },
+    "maximum_coherence": {
+      "episode_median": 0.991442112319352,
+      "control_median": 0.9997308655045094,
+      "episode_count": 6,
+      "control_count": 20,
+      "mann_whitney_u": 20.0,
+      "p_value": 0.013143378360769665
+    }
+  }
+}
