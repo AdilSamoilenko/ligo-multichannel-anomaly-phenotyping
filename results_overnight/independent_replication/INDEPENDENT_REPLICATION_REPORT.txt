@@ -1,0 +1,71 @@
+INDEPENDENT REPLICATION ANALYSIS
+==========================================
+
+This analysis tests a fixed cross-channel phenotype identified during the discovery analysis.
+
+Discovery phenotype
+  WFS channel: H1:IMC-WFS_A_DC_YAW_OUT_DQ
+  LSC channel: H1:LSC-POP_A_LF_OUT_DQ
+  Discovery correlation: 0.797704
+  Discovery lag: 0.208984 s
+  Discovery file: W10_H1_AUX_AR1.gwf
+  Discovery interval: 1376516121.000 to 1376516128.000
+
+Validation settings
+  Window length: 7.0 s
+  Window step: 1.0 s
+  Lag search: +/- 0.500 s
+  Frozen lag tolerance: +/- 0.0625 s
+  Primary correlation threshold: 0.70
+  Surrogates per window: 250
+
+Input files
+  /home/adil/ligo-anomaly/data/auxiliary/CONTROL_W1_H1_AUX_AR1.gwf
+  /home/adil/ligo-anomaly/data/auxiliary/W0_H1_AUX_AR1.gwf
+  /home/adil/ligo-anomaly/data/auxiliary/W10_H1_AUX_AR1.gwf
+  /home/adil/ligo-anomaly/data/auxiliary/W7_H1_AUX_AR1.gwf
+
+Summary
+  Windows analysed: 219
+  Primary passes: 15
+  Primary fraction: 0.068493
+  Secondary passes: 18
+  Secondary fraction: 0.082192
+  Uncorrected significant windows: 19
+  Median frozen-lag correlation: 0.141911
+  Maximum frozen-lag correlation: 0.903255
+  Median maximum correlation: 0.357272
+  Maximum correlation: 0.914098
+  Median empirical p-value: 0.398406
+  Minimum empirical p-value: 0.00398406
+
+Strongest validation windows
+  W10_H1_AUX_AR1.gwf 1376516143.000 r_frozen=+0.903255 lag=+0.235352s r_max=+0.903255 max_lag=+0.235352s p=0.0796813
+  W10_H1_AUX_AR1.gwf 1376516142.000 r_frozen=+0.885648 lag=+0.271484s r_max=+0.897204 max_lag=+0.387695s p=0.00398406
+  CONTROL_W1_H1_AUX_AR1.gwf 1370345572.000 r_frozen=+0.856214 lag=+0.253906s r_max=+0.856214 max_lag=+0.253906s p=0.0159363
+  W10_H1_AUX_AR1.gwf 1376516140.000 r_frozen=+0.848512 lag=+0.271484s r_max=+0.914098 max_lag=+0.500000s p=0.00796813
+  W0_H1_AUX_AR1.gwf 1369599121.000 r_frozen=+0.844086 lag=+0.146484s r_max=+0.870800 max_lag=-0.091797s p=0.0239044
+  W7_H1_AUX_AR1.gwf 1374550484.000 r_frozen=+0.836462 lag=+0.271484s r_max=+0.836462 max_lag=+0.271484s p=0.0398406
+  W0_H1_AUX_AR1.gwf 1369599120.000 r_frozen=+0.815221 lag=+0.146484s r_max=+0.815222 max_lag=+0.145508s p=0.0557769
+  W7_H1_AUX_AR1.gwf 1374550483.000 r_frozen=+0.802747 lag=+0.146484s r_max=+0.868514 max_lag=-0.219727s p=0.00398406
+  W0_H1_AUX_AR1.gwf 1369599122.000 r_frozen=+0.796030 lag=+0.146484s r_max=+0.846863 max_lag=-0.143555s p=0.0239044
+  W10_H1_AUX_AR1.gwf 1376516139.000 r_frozen=+0.766909 lag=+0.271484s r_max=+0.887270 max_lag=+0.500000s p=0.0159363
+  W7_H1_AUX_AR1.gwf 1374550486.000 r_frozen=+0.746373 lag=+0.271484s r_max=+0.751939 max_lag=+0.362305s p=0.0956175
+  W10_H1_AUX_AR1.gwf 1376516144.000 r_frozen=+0.739819 lag=+0.146484s r_max=+0.779092 max_lag=-0.172852s p=0.063745
+  W10_H1_AUX_AR1.gwf 1376516129.000 r_frozen=+0.738482 lag=+0.271484s r_max=+0.815828 max_lag=+0.500000s p=0.0119522
+  W7_H1_AUX_AR1.gwf 1374550487.000 r_frozen=+0.714641 lag=+0.271484s r_max=+0.716401 max_lag=+0.334961s p=0.0996016
+  CONTROL_W1_H1_AUX_AR1.gwf 1370345562.000 r_frozen=+0.710466 lag=+0.160156s r_max=+0.710466 max_lag=+0.160156s p=0.0398406
+  W10_H1_AUX_AR1.gwf 1376516146.000 r_frozen=+0.694090 lag=+0.146484s r_max=+0.827393 max_lag=-0.489258s p=0.123506
+  W7_H1_AUX_AR1.gwf 1374550485.000 r_frozen=+0.692408 lag=+0.271484s r_max=+0.703543 max_lag=+0.383789s p=0.139442
+  W7_H1_AUX_AR1.gwf 1374550510.000 r_frozen=+0.679228 lag=+0.165039s r_max=+0.679228 max_lag=+0.165039s p=0.0557769
+  W10_H1_AUX_AR1.gwf 1376516153.000 r_frozen=+0.678922 lag=+0.146484s r_max=+0.691050 max_lag=+0.033203s p=0.179283
+  W10_H1_AUX_AR1.gwf 1376516109.000 r_frozen=+0.670917 lag=+0.146484s r_max=+0.756545 max_lag=-0.356445s p=0.0796813
+
+Interpretation
+  The discovery phenotype was fixed before the validation scan.
+  The primary test evaluates correlation near the discovery lag rather than selecting a new lag for each validation window.
+  The maximum-correlation statistic is reported separately because it involves an additional lag search.
+  The surrogate test uses phase-randomised versions of the second channel.
+  The empirical p-values are per-window values and are not sufficient by themselves to establish global discovery significance.
+  The scan does not establish causality, a gravitational-wave origin, a new instrumental coupling, or novelty.
+  Any candidate surviving this analysis should be tested against independent controls and physical channel provenance before stronger claims are made.

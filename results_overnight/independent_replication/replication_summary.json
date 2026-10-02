@@ -1,0 +1,15 @@
+{
+  "windows": 219,
+  "primary_passes": 15,
+  "secondary_passes": 18,
+  "uncorrected_significant": 19,
+  "primary_fraction": 0.0684931506849315,
+  "secondary_fraction": 0.0821917808219178,
+  "median_frozen_r": 0.14191147501874504,
+  "median_max_r": 0.35727230964703194,
+  "maximum_frozen_r": 0.9032546217437629,
+  "maximum_r": 0.9140984282557577,
+  "median_empirical_p": 0.398406374501992,
+  "minimum_empirical_p": 0.00398406374501992,
+  "fdr_significant": 0
+}
