@@ -60,9 +60,8 @@ report.append(f"Created: {results['metadata']['created_utc']}")
 report.append(f"Input:   {NETWORK}")
 report.append("")
 
-# ----------------------------------------------------------------------
+
 # 1. Load network
-# ----------------------------------------------------------------------
 
 report.append("=" * 80)
 report.append("1. NETWORK VALIDATION")
@@ -89,9 +88,8 @@ report.append("")
 for ch in channels:
     report.append(f"  {ch:12s} [{group(ch)}]")
 
-# ----------------------------------------------------------------------
+
 # 2. Extract every valid relationship
-# ----------------------------------------------------------------------
 
 rows = []
 
@@ -144,9 +142,7 @@ report.append(
     f"{len(results['within_subsystem'])}"
 )
 
-# ----------------------------------------------------------------------
 # 3. Strongest overall relationships
-# ----------------------------------------------------------------------
 
 report.append("")
 report.append("=" * 80)
@@ -167,9 +163,7 @@ for i, z in enumerate(strongest[:30], 1):
         f"[{z['group_a']} -> {z['group_b']}]"
     )
 
-# ----------------------------------------------------------------------
 # 4. Cross-subsystem relationships
-# ----------------------------------------------------------------------
 
 report.append("")
 report.append("=" * 80)
@@ -191,9 +185,7 @@ for i, z in enumerate(cross, 1):
         f"[{z['group_a']} -> {z['group_b']}]"
     )
 
-# ----------------------------------------------------------------------
 # 5. Strong relationships that involve independent-looking systems
-# ----------------------------------------------------------------------
 
 interesting_groups = {"PEM", "ETMX", "PCAL", "PI"}
 
@@ -220,9 +212,8 @@ for i, z in enumerate(independent_candidates[:50], 1):
 if not independent_candidates:
     report.append("No valid relationships involving these groups.")
 
-# ----------------------------------------------------------------------
-# 6. Sanity checks
-# ----------------------------------------------------------------------
+
+# 6. Crossreferenceing
 
 report.append("")
 report.append("=" * 80)
@@ -262,9 +253,9 @@ for z in same_signal_like[:20]:
         f"r={z['r']:+.6f}, lag={z['lag_seconds']:+.6f}s"
     )
 
-# ----------------------------------------------------------------------
+
 # 7. Search repository for candidate episode GPS
-# ----------------------------------------------------------------------
+
 
 report.append("")
 report.append("=" * 80)
@@ -291,7 +282,7 @@ for p in ROOT.rglob("*"):
     except Exception:
         continue
 
-    # Avoid reading huge binary files.
+   
     if size > 50_000_000:
         continue
 
@@ -318,9 +309,9 @@ if not candidate_files:
         "No small repository file directly contains the candidate GPS strings."
     )
 
-# ----------------------------------------------------------------------
+
 # 8. Inspect known candidate result files
-# ----------------------------------------------------------------------
+
 
 report.append("")
 report.append("=" * 80)
@@ -358,9 +349,8 @@ for p in result_candidates:
         except Exception as e:
             report.append(f"  Read error: {e}")
 
-# ----------------------------------------------------------------------
-# 9. Inspect source code parameters
-# ----------------------------------------------------------------------
+
+# 9. Inspect source code reqs
 
 report.append("")
 report.append("=" * 80)
@@ -415,9 +405,6 @@ for name in scripts:
     except Exception as e:
         report.append(f"  Read error: {e}")
 
-# ----------------------------------------------------------------------
-# 10. Inspect statistical files
-# ----------------------------------------------------------------------
 
 report.append("")
 report.append("=" * 80)
@@ -437,9 +424,8 @@ if stats_dir.exists():
         except Exception:
             pass
 
-# ----------------------------------------------------------------------
+
 # 11. Candidate interpretation flags
-# ----------------------------------------------------------------------
 
 report.append("")
 report.append("=" * 80)
@@ -475,9 +461,8 @@ for z in flags[:50]:
         + "; ".join(z["flags"])
     )
 
-# ----------------------------------------------------------------------
-# 12. Scientific interpretation guardrails
-# ----------------------------------------------------------------------
+
+
 
 report.append("")
 report.append("=" * 80)
@@ -524,9 +509,7 @@ report.append(
     "of a frozen phenotype on data not used for discovery."
 )
 
-# ----------------------------------------------------------------------
-# 13. Save
-# ----------------------------------------------------------------------
+
 
 JSON_OUT.write_text(
     json.dumps(results, indent=2, allow_nan=False),
